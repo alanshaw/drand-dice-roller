@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <title>drand dice roller | Chosen by fair dice roll. Guaranteed to be random.</title>
+  </head>
+  <body>
+    <div id="dice">24</div>
+    <button id="roll">Roll</button>
+    <style>
+      body {
+        margin: 0;
+      }
+      #dice {
+        background: url(dice.png) no-repeat scroll center/295px,
+           radial-gradient(ellipse at center, #ffffff 0%,#ce0000 100%);
+        height: 100vh;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 3.5rem;
+        font-weight: 900;
+        color: white;
+        line-height: 100vh;
+        text-align: center;
+      }
+      #roll {
+        position: absolute;
+        top: calc(50vh + 200px);
+        left: calc(50% - 50px);
+        width: 100px;
+      }
+    </style>
+    <script type="module" src="main.drand.js"></script>
+  </body>
+</html>

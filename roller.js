@@ -14,7 +14,7 @@ export function roll (el, duration) {
         setValue(lastValue)
         return resolve()
       }
-      setValue(randomInt(1, 25))
+      setValue(randomInt(1, 21))
       setTimeout(next, interval)
     }
     next()
@@ -22,7 +22,7 @@ export function roll (el, duration) {
 
   const stop = v => {
     clearInterval(intervalID)
-    lastValue = v || randomInt(1, 25)
+    lastValue = v || randomInt(1, 21)
     return done
   }
 

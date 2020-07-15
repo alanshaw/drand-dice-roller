@@ -29,7 +29,7 @@ async function main () {
 
     const round = client.roundAt(Date.now()) + 1
     const rand = await client.get(round)
-    const num = (BigInt('0x' + rand.randomness) % 24n + 1n).toString(10)
+    const num = (BigInt('0x' + rand.randomness) % 20n + 1n).toString(10)
 
     await currentRoll.stop(num)
     btn.removeAttribute('disabled')

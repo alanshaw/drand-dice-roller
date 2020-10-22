@@ -3,12 +3,11 @@
 import { roll } from './roller.js'
 import Client, { HTTP } from 'https://cdn.jsdelivr.net/npm/drand-client/drand.js'
 
-const chainHash = '84b2234fb34e835dccd048255d7ad3194b81af7d978c3bf157e3469592ae4e02'
+const chainHash = '8990e7a9aaed2ffed73dbd7092123d6f289930540d7651336225dc172e51b2ce'
 
 const urls = [
-  'https://pl-us.testnet.drand.sh',
-  'https://pl-eu.testnet.drand.sh',
-  'https://pl-sin.testnet.drand.sh'
+  'https://api.drand.sh',
+  'https://drand.cloudflare.com'
 ]
 
 async function main () {
